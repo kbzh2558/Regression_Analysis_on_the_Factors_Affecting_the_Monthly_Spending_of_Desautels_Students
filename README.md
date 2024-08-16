@@ -17,7 +17,7 @@ University presents an opportune platform for students to develop their financia
     <summary>Data Collection.</summary>
 
     - data collection was completed through a delicately designed questionnaire built on `Qualtrics` platform. The link can be found [here](https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_bsIn07U5qcK27IO). The questionnaire comprised seven questions, six requiring numerical inputs, while the remaining required a text input.
-    - Based on conventional wisdom, the following independent variables were selected:
+    - based on conventional wisdom, the following independent variables were selected:
         - a. the distance of residence from McGill in kilometers (quantitative),
         - b. frequency of dining out per month in numbers of times (quantitative),
         - c. living arrangement(categorical),
@@ -36,12 +36,18 @@ University presents an opportune platform for students to develop their financia
     - Second half of the questionnaire:
     ![image](https://github.com/user-attachments/assets/f91c1c60-c4cd-4225-9779-253696008f8c)
 
+    The data was exported into an `xlsx` file for further analysis. 
+
    </details>
 
 3. <details>
-    <summary>K-NN.</summary>
+    <summary>Exploratory Data Analysis.</summary>
 
-    - we used the `sktlearn` package to perform unsupervised learning on the dataset to group stations together. Detailed rationales can be found in the paper. 
+    - exploratory data analysis was conducted to comprehensively understand the data at hand. The analysis included the following portions:
+        - a. `SOCS` analysis for variable distributions,
+        - b. `Confidence Interval` inference for population means, and
+        - c. `Correlation` analysis between the variables.
+    Detailed rationales and explanations can be found in the paper. 
    </details>
 
 4. <details>
