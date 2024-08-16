@@ -43,7 +43,7 @@ University presents an opportune platform for students to develop their financia
 3. <details>
     <summary>Exploratory Data Analysis.</summary>
 
-    exploratory data analysis was conducted to comprehensively understand the data at hand. The analysis included the following portions:
+    - exploratory data analysis was conducted to comprehensively understand the data at hand. The analysis included the following portions:
         - a. `SOCS` analysis for variable distributions,
         - b. `Confidence Interval` inference for population means, and
         - c. `Correlation` analysis between the variables.
