@@ -43,17 +43,18 @@ University presents an opportune platform for students to develop their financia
 3. <details>
     <summary>Exploratory Data Analysis.</summary>
 
-    - exploratory data analysis was conducted to comprehensively understand the data at hand. The analysis included the following portions:
+    exploratory data analysis was conducted to comprehensively understand the data at hand. The analysis included the following portions:
         - a. `SOCS` analysis for variable distributions,
         - b. `Confidence Interval` inference for population means, and
         - c. `Correlation` analysis between the variables.
+    
     Detailed rationales and explanations can be found in the paper. 
    </details>
 
 4. <details>
-    <summary>Exponential Smoothing ETS.</summary>
+    <summary>Hypothesis Testing.</summary>
 
-    we had to predict the transition probability, in other words, the tendency for a bike to travel from one cluster to the other at different times between clusters:
+    several hypothesis testing were conducted to gain more directional insights before building the actual regression model:
 
       - The `ETS` model: was chosen for its capability to capture human behavioral probabilities, past dependencies, and seasonalities, aligning with the nature of bike-sharing systems.
 
