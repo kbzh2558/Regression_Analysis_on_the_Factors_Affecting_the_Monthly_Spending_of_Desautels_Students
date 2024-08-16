@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/783dfd4f-b534-4164-ab51-5824679caf69)# 📝💰 Regression Analysis on the Factors Affecting the Monthly Spending of Desautels Students
+# 📝💰 Regression Analysis on the Factors Affecting the Monthly Spending of Desautels Students
 ![Excel](https://img.shields.io/badge/Microsoft-Excel?logo=microsoft-excel&logoColor=green)
 
 ⚡ Exploratory Data Analysis, Hypothesis Testing, and Multiple Regression Engineering ⚡
@@ -9,9 +9,6 @@
 ## Overview
 
 University presents an opportune platform for students to develop their financial literacy skills. At Desautels, the Faculty of Commerce, students begin their education by learning about the economy, accounting, and global business backgrounds, which are on broader scopes than trifles like monthly spending. Despite most of their outstanding academic performance, many encounter challenges in controlling their expenditures due to an inadequate understanding of the underlying factors affecting their spending behavior. Thus, this research investigates the effects of multiple factors on the monthly spending of students enrolled at Desautels. By performing statistical analyses of the data collected, this paper aims to interpret the relationship between our targeting variables and monthly spending to provide valuable insights into practical recommendations for controlling students’ monthly spending. These recommendations will assist students in understanding their spending behaviors and managing their budgets to attain their respective financial goals.
-
-
-![image](https://github.com/kbzh2558/Bike-sharing_System_in_New_York_City/assets/161892255/375a9212-296e-4e12-a64b-ab73e70ee3a6)
 
 
 ### Step-by-step Breakdown
