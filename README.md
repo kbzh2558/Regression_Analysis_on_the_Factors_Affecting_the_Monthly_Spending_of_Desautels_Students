@@ -1,15 +1,15 @@
-# 📝💰 Regression Analysis on the Factors Affecting the Monthly Spending of Desautels Students
+![image](https://github.com/user-attachments/assets/783dfd4f-b534-4164-ab51-5824679caf69)# 📝💰 Regression Analysis on the Factors Affecting the Monthly Spending of Desautels Students
 ![Excel](https://img.shields.io/badge/Microsoft-Excel?logo=microsoft-excel&logoColor=green)
 
-⚡ Optimization in Balance between Demand Capturing and Cost Deployment ⚡
+⚡ Exploratory Data Analysis, Hypothesis Testing, and Multiple Regression Engineering ⚡
 
 > [!NOTE]
-> This project was carried out by students (Mingshu Liu, Xiasheng Quan, Faye Wu, and Kaibo Zhang) of Desautels Faculty of Management at McGill University, under the supervision of Professor [Rim Hariss](https://www.mcgill.ca/desautels/rim-hariss). It was built upon previous research done by scholars at HKUST. Click [here](https://doi.org/10.1145/2820783.2820837.).
+> This project was carried out by Kaibo Zhang, a student of Desautels Faculty of Management at McGill University, under the supervision of Professor [Gabriel Frieden](https://www.mcgill.ca/desautels/gabriel-frieden). This study relied on first-hand data collection through a self-administered questionnaire developed on the Qualtrics platform. 
 
 ## Overview
 
-Bike-sharing systems have emerged as a popular and sustainable mode of transportation in urban environments, offering an efficient means of travel for commuters and tourists alike. Understanding the dynamics of bike-sharing demand is crucial for optimizing resource allocation to ensure efficient service delivery and customer satisfaction. Leveraging the dataset and preprocessing techniques established by prior researchers, our study aims to develop a simplified yet robust model capable of capturing the nuances of demand variations and customer patterns. Furthermore, this study goes beyond mere prediction by integrating an optimization model to determine the optimal number of bikes to deploy. Focusing on the week of August 16th to August 22nd, we aim to devise a strategy for resource allocation that maximizes efficiency and minimizes operational costs. In essence, this project bridges academic research and practical
-applications, offering a comprehensive framework for understanding and managing the transitional demands of bike-sharing stations in New York City. By leveraging insights from previous research and employing advanced analytical techniques, we aspire to contribute to the ongoing efforts to enhance the sustainability and accessibility of urban transportation systems.
+University presents an opportune platform for students to develop their financial literacy skills. At Desautels, the Faculty of Commerce, students begin their education by learning about the economy, accounting, and global business backgrounds, which are on broader scopes than trifles like monthly spending. Despite most of their outstanding academic performance, many encounter challenges in controlling their expenditures due to an inadequate understanding of the underlying factors affecting their spending behavior. Thus, this research investigates the effects of multiple factors on the monthly spending of students enrolled at Desautels. By performing statistical analyses of the data collected, this paper aims to interpret the relationship between our targeting variables and monthly spending to provide valuable insights into practical recommendations for controlling students’ monthly spending. These recommendations will assist students in understanding their spending behaviors and managing their budgets to attain their respective financial goals.
+
 
 ![image](https://github.com/kbzh2558/Bike-sharing_System_in_New_York_City/assets/161892255/375a9212-296e-4e12-a64b-ab73e70ee3a6)
 
@@ -17,19 +17,37 @@ applications, offering a comprehensive framework for understanding and managing 
 ### Step-by-step Breakdown
 
 1. <details>
-    <summary>Network Analysis.</summary>
+    <summary>Data Collection.</summary>
 
-    - we used the `networkx` package as the primary tool for network analysis. **NOTE:** We aggregated trip records on an hourly basis and created an adjacency matrix.
-    - this helped us to capture the inherited relationship between individual stations and include them in the clustering algorithm.
+    - data collection was completed through a delicately designed questionnaire built on `Qualtrics` platform. The link can be found [here](https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_bsIn07U5qcK27IO). The questionnaire comprised seven questions, six requiring numerical inputs, while the remaining required a text input.
+    - Based on conventional wisdom, the following independent variables were selected:
+        - a. the distance of residence from McGill in kilometers (quantitative),
+        - b. frequency of dining out per month in numbers of times (quantitative),
+        - c. living arrangement(categorical),
+        - d. number of monthly subscriptions (quantitative),
+        - e. frequency of going to the groceries in numbers of times (quantitative), and
+        - f. the number of shopping (quantitative).
+    
+    **NOTE:** Below are some screenshots of the questionnaire.
+   
+    - Cover page of the questionnaire:
+    ![image](https://github.com/user-attachments/assets/23d13083-0590-4a8c-8296-597b7d64b1ff)
+
+    - First half of the questionnaire:
+    ![image](https://github.com/user-attachments/assets/66350378-43b0-44e3-9263-4fa09aa34403)
+
+    - Second half of the questionnaire:
+    ![image](https://github.com/user-attachments/assets/f91c1c60-c4cd-4225-9779-253696008f8c)
+
    </details>
 
-2. <details>
+3. <details>
     <summary>K-NN.</summary>
 
     - we used the `sktlearn` package to perform unsupervised learning on the dataset to group stations together. Detailed rationales can be found in the paper. 
    </details>
 
-3. <details>
+4. <details>
     <summary>Exponential Smoothing ETS.</summary>
 
     we had to predict the transition probability, in other words, the tendency for a bike to travel from one cluster to the other at different times between clusters:
@@ -38,7 +56,7 @@ applications, offering a comprehensive framework for understanding and managing 
 
    </details>
 
-4. <details>
+5. <details>
     <summary>Multiple Regression.</summary>
 
       - considered the hour of the day and day of the week for temporal patterns and incorporates meteorological features: weather type, temperature, and wind speed.
@@ -48,14 +66,14 @@ applications, offering a comprehensive framework for understanding and managing 
         - b. non-stationary residuals
    </details>
 
-5. <details>
+6. <details>
     <summary>ARIMA.</summary>
 
     - we used auto `ARIMA` to explore the remaining time dependency correlations in the residuals. **NOTE:** `ARIMA` struggles to capture high peaks in time series accurately.
 
     </details>
 
-6. <details>
+7. <details>
    <summary>Gurobi Optimization.</summary>
 
     - we used `gurobi` to implement our optimization model.
