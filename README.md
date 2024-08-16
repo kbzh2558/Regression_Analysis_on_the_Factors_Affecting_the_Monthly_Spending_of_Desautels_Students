@@ -23,7 +23,7 @@ University presents an opportune platform for students to develop their financia
         - c. living arrangement(categorical),
         - d. number of monthly subscriptions (quantitative),
         - e. frequency of going to the groceries in numbers of times (quantitative), and
-        - f. the number of shopping (quantitative).
+        - f. frequency of shopping (quantitative).
     
     **NOTE:** Below are some screenshots of the questionnaire.
    
