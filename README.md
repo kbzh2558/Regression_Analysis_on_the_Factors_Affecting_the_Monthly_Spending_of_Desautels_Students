@@ -1,5 +1,5 @@
 # 🚲🗽Regression Analysis on the Factors Affecting the Monthly Spending of Desautels Students
-![Excel](https://img.shields.io/badge/excel-11.0.0-blue?logo=microsoft-excel&logoColor=green)
+![Excel](https://img.shields.io/badge/Microsoft-Excel?logo=microsoft-excel&logoColor=green)
 
 ⚡ Optimization in Balance between Demand Capturing and Cost Deployment ⚡
 
