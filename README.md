@@ -9,6 +9,8 @@
 ## Overview
 
 University presents an opportune platform for students to develop their financial literacy skills. At Desautels, the Faculty of Commerce, students begin their education by learning about the economy, accounting, and global business backgrounds, which are on broader scopes than trifles like monthly spending. Despite most of their outstanding academic performance, many encounter challenges in controlling their expenditures due to an inadequate understanding of the underlying factors affecting their spending behavior. Thus, this research investigates the effects of multiple factors on the monthly spending of students enrolled at Desautels. By performing statistical analyses of the data collected, this paper aims to interpret the relationship between our targeting variables and monthly spending to provide valuable insights into practical recommendations for controlling students’ monthly spending. These recommendations will assist students in understanding their spending behaviors and managing their budgets to attain their respective financial goals.
+
+## Repo Structure
 ```
 Regression_Analysis_on_the_Factors_Affecting_the_Monthly_Spending_of_Desautels_Students/
 ├── README.md
