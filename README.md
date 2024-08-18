@@ -4,7 +4,7 @@
 ⚡ Exploratory Data Analysis, Hypothesis Testing, and Multiple Regression Engineering ⚡
 
 > [!NOTE]
-> This project was carried out by Kaibo Zhang, a student of Desautels Faculty of Management at McGill University, under the supervision of Professor [Gabriel Frieden](https://www.mcgill.ca/desautels/gabriel-frieden). This study relied on first-hand data collection through a self-administered questionnaire developed on the Qualtrics platform. 
+> This project was carried out by Kaibo Zhang, a student of Desautels Faculty of Management at McGill University, under the supervision of Professor [Gabriel Frieden](https://www.mcgill.ca/desautels/gabriel-frieden). This study relied on first-hand data collection through a self-administered questionnaire developed on the `Qualtrics` platform. All analysis and model building were conducted on `Excel`.
 
 ## Overview
 
