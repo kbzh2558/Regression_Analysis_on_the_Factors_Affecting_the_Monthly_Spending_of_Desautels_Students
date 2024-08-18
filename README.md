@@ -70,7 +70,7 @@ University presents an opportune platform for students to develop their financia
       - to obtain the optimal multiple regression model, this study mimicked the `best subset` method and tested all possible combinations of variables.
       - then, further examinations were conducted to remove insignificant variables from the model.
 
-      the final equation obtained is as follows:
+      **the final equation obtained is as follows:**
    
          Monthly Spending = 916.4253 + 16.7489 (Dine-out) + 85.4177 (Groceries) + 29.4629 (Subscriptions) + e
    </details>
