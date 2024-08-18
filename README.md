@@ -72,6 +72,6 @@ University presents an opportune platform for students to develop their financia
 
       the final equation obtained is as follows:
    
-        - Monthly Spending = 916.4253 + 16.7489 (Dine-out) + 85.4177 (Groceries) + 29.4629 (Subscriptions) + e
+         Monthly Spending = 916.4253 + 16.7489 (Dine-out) + 85.4177 (Groceries) + 29.4629 (Subscriptions) + e
    </details>
 
