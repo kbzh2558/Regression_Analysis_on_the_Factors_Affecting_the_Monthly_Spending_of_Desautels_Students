@@ -40,10 +40,10 @@ University presents an opportune platform for students to develop their financia
 
    </details>
 
-3. <details>
+2. <details>
     <summary>Exploratory Data Analysis.</summary>
 
-    - exploratory data analysis was conducted to comprehensively understand the data at hand. The analysis included the following portions:
+    - exploratory data analysis was conducted to comprehensively understand the data at hand. The study included the following portions:
         - a. `SOCS` analysis for variable distributions,
         - b. `Confidence Interval` inference for population means, and
         - c. `Correlation` analysis between the variables.
@@ -51,41 +51,26 @@ University presents an opportune platform for students to develop their financia
     Detailed rationales and explanations can be found in the paper. 
    </details>
 
-4. <details>
+3. <details>
     <summary>Hypothesis Testing.</summary>
 
-    several hypothesis testing were conducted to gain more directional insights before building the actual regression model:
+    - several hypothesis tests were conducted to gain more directional insights before building the actual regression model:
 
-      - The `ETS` model: was chosen for its capability to capture human behavioral probabilities, past dependencies, and seasonalities, aligning with the nature of bike-sharing systems.
+      - a. two-sample t-test for difference in population means
+      - b. one-sample t-test for the true slope beta1
+      - c. global f-test for all variables
+
+    The detailed explanations can be found in the paper. 
 
    </details>
 
-5. <details>
+4. <details>
     <summary>Multiple Regression.</summary>
 
-      - considered the hour of the day and day of the week for temporal patterns and incorporates meteorological features: weather type, temperature, and wind speed.
+      - to obtain the optimal multiple regression model, this study mimicked the `best subset` method and tested all possible combinations of variables.
+      - then, further examinations were conducted to remove insignificant variables from the model.
 
-      - autocorrelation found from the Watson test (Durbin-Watson statistic of 0.781) to assess autocorrelation:
-        - a. Persistent seasonality observed in residuals (ACF & PACF), despite attempts to decompose, AND
-        - b. non-stationary residuals
+      the final equation obtained is as follows:
+        - Monthly Spending = 916.4253 + 16.7489 (Dine-out) + 85.4177 (Groceries) + 29.4629 (Subscriptions) + e
    </details>
 
-6. <details>
-    <summary>ARIMA.</summary>
-
-    - we used auto `ARIMA` to explore the remaining time dependency correlations in the residuals. **NOTE:** `ARIMA` struggles to capture high peaks in time series accurately.
-
-    </details>
-
-7. <details>
-   <summary>Gurobi Optimization.</summary>
-
-    - we used `gurobi` to implement our optimization model.
-    - the detailed documentation and methods for `gurobi` usage can be found [here](https://www.gurobi.com/).
-    - the optimization formulation was in essence a linear programming model:
-
-        - a. with decision variables keeping track of the transitional flow of bikes between clusters to find the optimal number of initial bike deployments.
-        - b. the parameters were calculated from the abovementioned prediction models.
-        - c. the `objective function` was imitating the techniques of `LASSO Regression` by introducing a regularization term `lamda (λ)` into the formula, seeking to minimize the mismatch between the estimated demand and the number of bikes              checked out at each cluster while penalizing attempts to overly increase the number of initial bikes needed, thereby aligning supply with anticipated demand.
-        - d. The optimal `λ` = 6 was selected through trials and errors and sensitivity analysis on the magnitude of changes in demand mismatch.
-   </details>
